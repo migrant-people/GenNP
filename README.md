@@ -33,19 +33,25 @@ See the paper for a detailed functional description.
 In order to streamline the installation and deployment process of GenNP, we have encapsulated it within a Docker container. Prior to setting up GenNP, it is imperative that you install a Docker runtime environment on your machine, such as Docker Engine for Linux and Mac or Docker Desktop for Windows, ensuring compatibility and a seamless setup experience.
 - Docker Desktop：[https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
 - Docker Engine：[https://docs.docker.com/engine/](https://docs.docker.com/engine/)
+- 
 After the installation is complete, pull GenNP.
+
 `sudo docker pull gennp:1.0`
+
 ## Run GenNP
 
 **1. Adjust the parameter config.py based on your requirements.**
 `sudo docker run -v ./simdatas:/mnt/GenNP/simdatas -it gennp:1.0 /bin/bash`
 **2. Enter the directory where GenNP is located.
 `cd /mnt/GenNP`
+
 **3. Run the main program using python3.**
 `python3 /mnt/GenNP/main.py`
 To avoid occupying excessive memory and computational resources, you can delete the container after each dataset generation using the following command.
+
 **4. Pause all the images.**
 `sudo docker stop $(sudo docker ps -a -q)`
+
 **5. Remove all the images.**
 `sudo docker rm $(sudo docker ps -a -q)`
 
