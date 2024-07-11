@@ -9,19 +9,23 @@ GenNP offers a rich set of parameter configurations. Simply modify the config.py
 - Parallelism number
 - Temporal granularity
 - Throughput, drop, delay, jitter, routing table, etc.)
+
 **2. Network configuration**
 - Topology: real network (NSFNET, GBN, GEANT); simulation network (BA, WR, ER )
 - Link: bandwidth
 - Queue size & scheduling policy: FIFO, DSCP
 - Routing protocol: OSPF (helloInterval, routerDeadInterval), RIP (updateInterval, routeExpiryTime)
+
 **3. Traffic configuration**
 - Sending configuration (send & stop time, packet size)
 - Traffic model (possion, on-off, constant)
 - Traffic density, probability of communication between routers
+
 **4. Fault configuration**
 - Fault element & number (node, edge, port)
 - Fault & Recover time
 See the paper for a detailed functional description.
+
 # Getting Started
 
 ## Install docker environment and pull GenNP
