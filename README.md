@@ -41,20 +41,25 @@ After the installation is complete, pull GenNP.
 ## Run GenNP
 
 **1. Adjust the parameter config.py based on your requirements.**
+
 `sudo docker run -v ./simdatas:/mnt/GenNP/simdatas -it gennp:1.0 /bin/bash`
 
 **2. Enter the directory where GenNP is located.**
+
 `cd /mnt/GenNP`
 
 **3. Run the main program using python3.**
+
 `python3 /mnt/GenNP/main.py`
 
 To avoid occupying excessive memory and computational resources, you can delete the container after each dataset generation using the following command.
 
 **4. Pause all the images.**
+
 `sudo docker stop $(sudo docker ps -a -q)`
 
 **5. Remove all the images.**
+
 `sudo docker rm $(sudo docker ps -a -q)`
 
 # Cite GenNP
