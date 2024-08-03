@@ -36,13 +36,13 @@ In order to streamline the installation and deployment process of GenNP, we have
 
 After the installation is complete, pull GenNP.
 
-`sudo docker pull gennp:1.0`
+`sudo docker pull gennp:1.1`
 
 ## Run GenNP
 
 **1. Adjust the parameter config.py based on your requirements.**
 
-`sudo docker run -v ./simdatas:/mnt/GenNP/simdatas -it gennp:1.0 /bin/bash`
+`sudo docker run -v ./simdatas:/mnt/GenNP/simdatas -it gennp:1.1 /bin/bash`
 
 **2. Enter the directory where GenNP is located.**
 
