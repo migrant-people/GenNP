@@ -36,7 +36,7 @@ In order to streamline the installation and deployment process of GenNP, we have
 
 After the installation is complete, pull GenNP.
 
-`sudo docker pull gennp:1.1`
+`sudo docker pull migrantdocker/gennp:1.1`
 
 ## Run GenNP
 
