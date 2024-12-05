@@ -63,3 +63,4 @@ To avoid occupying excessive memory and computational resources, you can delete 
 `sudo docker rm $(sudo docker ps -a -q)`
 
 # Cite GenNP
+Yang, Fang, et al. "Gennp: A Low-Threshold and Powerful Network Performance Data Generator." Available at SSRN 4968394.
